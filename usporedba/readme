@@ -1,0 +1,5 @@
+SELECT *
+FROM measurements m
+WHERE m.time >= '2024-02-12 16:00:00' :: TIMESTAMP
+  AND m.time < '2024-02-12 16:10:00' :: TIMESTAMP
+ORDER BY m.time DESC;
